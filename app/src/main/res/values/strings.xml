@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Seattle Guide</string>
+    <string name="west_seattle_title">West Seattle</string>
+    <string name="pike_place_title">Pike Place Market</string>
+    <string name="lower_queen_anne_title">Lower Queen Anne</string>
+    <string name="westlake_center_title">WestLake Center</string>
 </resources>

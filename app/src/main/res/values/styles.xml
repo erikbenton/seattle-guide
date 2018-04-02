@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Styling for entries in the Main Screen -->
+    <style name="TitleEntry">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
 </resources>
