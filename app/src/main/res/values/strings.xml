@@ -4,4 +4,7 @@
     <string name="pike_place_title">Pike Place Market</string>
     <string name="lower_queen_anne_title">Lower Queen Anne</string>
     <string name="westlake_center_title">WestLake Center</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

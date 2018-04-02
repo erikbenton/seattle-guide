@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/west_seattle_tv"
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:text="@string/west_seattle_title" />
 
     <TextView
+        android:id="@+id/lower_queen_anne_tv"
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +25,7 @@
         android:background="#00788f"/>
 
     <TextView
+        android:id="@+id/pike_place_tv"
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +33,7 @@
         android:text="@string/pike_place_title" />
 
     <TextView
+        android:id="@+id/westlake_tv"
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
