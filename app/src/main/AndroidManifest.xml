@@ -18,16 +18,20 @@
         </activity>
         <activity
             android:name=".WestSeattleActivity"
-            android:label="@string/west_seattle_title" />
+            android:label="@string/west_seattle_title"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PikePlaceMarketActivity"
-            android:label="@string/pike_place_title" />
+            android:label="@string/pike_place_title"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".WestlakeCenterActivity"
-            android:label="@string/westlake_center_title" />
+            android:label="@string/westlake_center_title"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".LowerQueenAnneActivity"
-            android:label="@string/lower_queen_anne_title" />
+            android:label="@string/lower_queen_anne_title"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".EntryActivity"></activity>
     </application>
 

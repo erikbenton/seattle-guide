@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.LinearLayout;
 
 public class WestSeattleActivity extends AppCompatActivity
 {
@@ -13,6 +14,8 @@ public class WestSeattleActivity extends AppCompatActivity
 
         // Set the content of the activity to use the activity_category.xml layout file
         setContentView(R.layout.west_seattle);
+        LinearLayout westSeattle = findViewById(R.id.container);
+        westSeattle.setBackgroundColor(getResources().getColor(R.color.westSeattle));
 
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = findViewById(R.id.viewpager);

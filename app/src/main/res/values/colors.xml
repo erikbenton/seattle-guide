@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="westSeattle">#1e850f</color>
+    <color name="lowerQueenAnne">#00788f</color>
+    <color name="pikePlace">#cf722e</color>
+    <color name="westlake">#003650</color>
 </resources>

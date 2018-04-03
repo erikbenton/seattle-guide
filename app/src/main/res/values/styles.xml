@@ -10,7 +10,7 @@
 
     <!-- Styling for entries in the Main Screen -->
     <style name="TitleEntry">
-        <item name="android:textSize">24dp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingTop">16dp</item>
@@ -33,6 +33,13 @@
     <!-- Text appearance style for a category tab -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#A8A19E</item>
+    </style>
+
+    <!--List Item Style -->
+    <style name="ListItem">
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>

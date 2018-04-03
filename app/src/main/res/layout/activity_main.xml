@@ -13,7 +13,7 @@
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1e850f"
+        android:background="@color/westSeattle"
         android:text="@string/west_seattle_title" />
 
     <TextView
@@ -22,14 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lower_queen_anne_title"
-        android:background="#00788f"/>
+        android:background="@color/lowerQueenAnne"/>
 
     <TextView
         android:id="@+id/pike_place_tv"
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#cf722e"
+        android:background="@color/pikePlace"
         android:text="@string/pike_place_title" />
 
     <TextView
@@ -37,7 +37,7 @@
         style="@style/TitleEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#003650"
+        android:background="@color/westlake"
         android:text="@string/westlake_center_title" />
 
 </LinearLayout>
