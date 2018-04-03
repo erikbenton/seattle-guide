@@ -1,61 +1,61 @@
 package com.example.android.seattleguide;
 
+import android.app.Activity;
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 
 import com.example.android.seattleguide.WestSeattleEventsFragment;
 import com.example.android.seattleguide.WestSeattleFoodFragment;
 import com.example.android.seattleguide.WestSeattlePlacesFragment;
 
-public class EntryAdapter extends FragmentPagerAdapter
+import java.util.ArrayList;
+import java.util.List;
+
+public class EntryAdapter extends ArrayAdapter<Entry>
 {
 
     private Context mContext;
+    private List<Entry> entryList;
+    private int mColorResourceId;
 
-    public EntryAdapter(Context context, FragmentManager fm) {
-        super(fm);
+    public EntryAdapter(@NonNull Activity context, ArrayList<Entry> list, int colorResource)
+    {
+        super(context, 0, list);
         mContext = context;
+        entryList = list;
+        mColorResourceId = colorResource;
     }
 
+    @NonNull
     @Override
-    public Fragment getItem(int position) {
-        if (position == 0)
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
+    {
+        View listItem = convertView;
+
+
+        if(listItem == null)
         {
-            return new WestSeattlePlacesFragment();
+            listItem = LayoutInflater.from(mContext).inflate(android.R.layout.simple_list_item_1, parent, false);
         }
-        else if (position == 1)
-        {
-            return new WestSeattleFoodFragment();
-        }
-        else
-        {
-            return new WestSeattleEventsFragment();
-        }
+
+        final Entry currentEntry = entryList.get(position);
+
+        ImageView imageView = listItem.findViewById(R.id.image);
+
+        // Adding image to the list
+        imageView.setImageResource(currentEntry.getImageResourceId());
+
+
+        return listItem;
     }
-
-    @Override
-    public int getCount() {
-        return 3;
-    }
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-
-        if (position == 0)
-        {
-            return mContext.getString(R.string.entry_place_title);
-        }
-        else if (position == 1)
-        {
-            return mContext.getString(R.string.entry_food_title);
-        }
-        else
-        {
-            return mContext.getString(R.string.entry_event_title);
-        }
-    }
-
 }
