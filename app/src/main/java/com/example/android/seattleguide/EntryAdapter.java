@@ -10,12 +10,12 @@ import com.example.android.seattleguide.WestSeattleEventsFragment;
 import com.example.android.seattleguide.WestSeattleFoodFragment;
 import com.example.android.seattleguide.WestSeattlePlacesFragment;
 
-public class SimplePagerAdapter extends FragmentPagerAdapter
+public class EntryAdapter extends FragmentPagerAdapter
 {
 
     private Context mContext;
 
-    public SimplePagerAdapter(Context context, FragmentManager fm) {
+    public EntryAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
     }
