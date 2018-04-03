@@ -12,7 +12,7 @@ public class Entry
         mDescription = description;
     }
 
-    public Entry(String title, int imageId, String description)
+    public Entry(String title, String description, int imageId)
     {
         mTitle = title;
         mImageResourceId = imageId;

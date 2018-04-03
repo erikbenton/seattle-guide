@@ -27,10 +27,10 @@ public class WestSeattlePlacesFragment extends Fragment
 
         // Create a list of places to go in West Seattle
         final ArrayList<Entry> places = new ArrayList<Entry>();
-        places.add(new Entry("Alki", "My favorite beach to chill at. It's not like a California beach with lots of sand and waves. It's a sandy -> rocky beach, but there are lots of fire pits, restaurants to eat at, and animals to see in the waters."));
-        places.add(new Entry("The Junction", "Lots of fun shopping to do around here. It's a community shopping strip that's a good hub for going, and coming home from downtown."));
-        places.add(new Entry("Admiral District", "The community shopping area for Alki and Admiral district dwellers. Some good restaurants, parks, and fitness centers"));
-        places.add(new Entry("Piers", "Near the end of the Alki boardwalk. Goo restaurant to at while you fish. Plus it's right where the Water Taxi is so it's very easy to get downtown."));
+        places.add(new Entry("Alki", "My favorite beach to chill at. It's not like a California beach with lots of sand and waves. It's a sandy -> rocky beach, but there are lots of fire pits, restaurants to eat at, and animals to see in the waters.", R.raw.alki));
+        places.add(new Entry("The Junction", "Lots of fun shopping to do around here. It's a community shopping strip that's a good hub for going, and coming home from downtown.", R.raw.west_seattle_junction));
+        places.add(new Entry("Admiral District", "The community shopping area for Alki and Admiral district dwellers. Some good restaurants, parks, and fitness centers", R.raw.admiral));
+        places.add(new Entry("Seacrest Park", "Near the end of the Alki boardwalk. Goo restaurant to at while you fish. Plus it's right where the Water Taxi is so it's very easy to get downtown.", R.raw.seacrest_park));
 
         // Create an Array Adapter for creating the layout for places
         EntryAdapter adapter = new EntryAdapter(getActivity(), places);

@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        style="@style/EntryTitle"
         android:id="@+id/entry_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -16,6 +17,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        style="@style/EntryDescription"
         android:id="@+id/entry_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

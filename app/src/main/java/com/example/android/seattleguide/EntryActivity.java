@@ -25,7 +25,7 @@ public class EntryActivity extends AppCompatActivity
         TextView entryDescription = findViewById(R.id.entry_description);
 
         entryTitle.setText(entry.getTitle());
-        //entryImage.setImageResource(entry.getImageResourceId());
+        entryImage.setImageResource(entry.getImageResourceId());
         entryDescription.setText(entry.getDescription());
     }
 }
