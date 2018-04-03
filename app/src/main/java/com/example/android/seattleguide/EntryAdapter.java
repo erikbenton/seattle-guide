@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.android.seattleguide.WestSeattleEventsFragment;
 import com.example.android.seattleguide.WestSeattleFoodFragment;
@@ -28,12 +29,11 @@ public class EntryAdapter extends ArrayAdapter<Entry>
     private List<Entry> entryList;
     private int mColorResourceId;
 
-    public EntryAdapter(@NonNull Activity context, ArrayList<Entry> list, int colorResource)
+    public EntryAdapter(@NonNull Activity context, ArrayList<Entry> list)
     {
         super(context, 0, list);
         mContext = context;
         entryList = list;
-        mColorResourceId = colorResource;
     }
 
     @NonNull
@@ -42,18 +42,15 @@ public class EntryAdapter extends ArrayAdapter<Entry>
     {
         View listItem = convertView;
 
-
         if(listItem == null)
         {
-            listItem = LayoutInflater.from(mContext).inflate(android.R.layout.simple_list_item_1, parent, false);
+            listItem = LayoutInflater.from(mContext).inflate(R.layout.list_item, parent, false);
         }
 
         final Entry currentEntry = entryList.get(position);
 
-        ImageView imageView = listItem.findViewById(R.id.image);
-
-        // Adding image to the list
-        imageView.setImageResource(currentEntry.getImageResourceId());
+        TextView entryText = listItem.findViewById(R.id.entry_text_view);
+        entryText.setText(currentEntry.getTitle());
 
 
         return listItem;

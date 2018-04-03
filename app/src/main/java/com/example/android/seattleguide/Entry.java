@@ -6,6 +6,12 @@ public class Entry
     private int mImageResourceId;
     private String mDescription;
 
+    public Entry(String title, String description)
+    {
+        mTitle = title;
+        mDescription = description;
+    }
+
     public Entry(String title, int imageId, String description)
     {
         mTitle = title;
