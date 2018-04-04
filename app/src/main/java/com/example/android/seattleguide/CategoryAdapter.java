@@ -14,25 +14,62 @@ public class CategoryAdapter extends FragmentPagerAdapter
 {
 
     private Context mContext;
+    private String mActivity;
 
-    public CategoryAdapter(Context context, FragmentManager fm) {
+    public CategoryAdapter(Context context, FragmentManager fm, String activity)
+    {
         super(fm);
         mContext = context;
+        mActivity = activity;
     }
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0)
+
+        if(mActivity.equals("lowerQueenAnne"))
         {
-            return new WestSeattlePlacesFragment();
+            if (position == 0)
+            {
+                return new LowerQueenAnnePlacesFragment();
+            }
+            else if (position == 1)
+            {
+                return new LowerQueenAnneFoodFragment();
+            }
+            else
+            {
+                return new LowerQueenAnneEventsFragment();
+            }
         }
-        else if (position == 1)
+        else if (mActivity.equals("westSeattle"))
         {
-            return new WestSeattleFoodFragment();
+            if (position == 0)
+            {
+                return new WestSeattlePlacesFragment();
+            }
+            else if (position == 1)
+            {
+                return new WestSeattleFoodFragment();
+            }
+            else
+            {
+                return new WestSeattleEventsFragment();
+            }
         }
         else
         {
-            return new WestSeattleEventsFragment();
+            if (position == 0)
+            {
+                return new WestSeattlePlacesFragment();
+            }
+            else if (position == 1)
+            {
+                return new WestSeattleFoodFragment();
+            }
+            else
+            {
+                return new WestSeattleEventsFragment();
+            }
         }
     }
 

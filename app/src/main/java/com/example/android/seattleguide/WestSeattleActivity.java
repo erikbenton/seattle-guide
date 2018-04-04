@@ -21,7 +21,7 @@ public class WestSeattleActivity extends AppCompatActivity
         ViewPager viewPager = findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager(), "westSeattle");
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
